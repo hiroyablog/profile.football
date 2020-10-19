@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(4, 30, 66);
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+body {
+    font-family: "YuGothic","Cera Pro",sans-serif!important;
+    background-color: rgb(250, 250, 250)!important;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+[class*="-head"] {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    .head-ttl {
+        padding: 0 0 12px;
+        position: relative;
+        font-weight: bold;
+        font-size: 42px;
+        margin: 0 0 50px 0;
+    }
+
+}
+
+/*ヘッダー*/
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top:0 ;
+    z-index: 10;
+}
+
+/* ヘッダーナビ */
+
+.list-menu a{
+    color: rgb(4, 30, 66);
+}
+  
+.list-menu > li{
+    padding: 20px 15px;
+    font-weight: bold;
+}
+  
+.list-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 -15px;
+}
+
+/*メインビジュアル*/
+.mv {
+    background: url(img/IMG_6131.jpg) no-repeat bottom center;
+    background-size: cover;
+    margin: 100px 0;
+
+    .container {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-ttl {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #ffffff;
+    }
+}
+
+/*アバウト*/
+
+#about {
+    padding: 50px 0;
+
+    .about-body {
+        background-color: #ffffff;
+        box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+        margin: 0 auto 100px auto ;
+        padding: 100px 40px;
+
+        .about-list {
+            width: 100%;
+            display: flex;
+            padding: 0;
+            margin-bottom: 40px;
+    
+            .about-content-1 {
+                padding-left: 16px;
+                width: 50%;
+    
+                .about-img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .about-content-2 {
+                padding-right: 16px;
+                border-right: 1px solid rgb(242, 244, 246);
+                width: 50%;
+
+                .about-name {
+                    font-weight: bold;
+                    font-size: 36px;
+                    letter-spacing: 0.1em;
+                    
+                }
+
+                .about-sub {
+                    font-weight: bold;
+                    font-size: 22px;
+                    letter-spacing: 0.1em;
+                    line-height: 32px;
+                    margin-top: 30px;
+                }
+
+                .about-p {
+                    font-size: 16px;
+                    margin-top: 30px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    
+
+}
+
+/*フットボール*/
+
+#football {
+    padding: 50px 0;
+
+    .football-body {
+
+        .football-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+
+            .football-player, .football-coach {
+                width: 50%;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+                    font-size: 36px;
+                    font-weight: bold;
+                    letter-spacing: 0.1em;
+                    line-height: 40px;
+                    background-color: rgb(4, 30, 66);
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 2px 120px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+        }
+    }
+}
+
+/*sns*/
+
+#sns {
+    padding: 50px 0;
+
+    .sns-body {
+        .sns-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+            
+
+            .sns-icon {
+                width: 50%;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sns-icon :hover {
+                box-shadow: none;
+                border: 1px solid rgba(0,0,0,0.14);
+            }
+
+            
+        }
+    }
+}
+
+[class*="btn-ico"] {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    padding: 30px 30px 30px 130px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    color: rgb(4, 30, 66);
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-radius: 5px;
+    position: relative;
+}
+
+[class*="btn-ico"]::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    margin: 0 0 40px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+[class*="btn-ico"][class*="instagram"]::before {
+    background-image: url(img/glyph-logo_May2016.png);
+}
+
+[class*="btn-ico"][class*="twitter"]::before {
+    background-image: url(img/Twitter_Social_Icon_Circle_Color.png);
+}
+
+[class*="btn-ico"][class*="note"]::before {
+    background-image: url(img/logo_symbol.png);
+}
+
+[class*="btn-ico"][class*="facebook"]::before {
+    background-image: url(img/f_logo_RGB-Blue_58.png);
+}
+
+footer {
+    background-color: rgb(4, 30, 66);
+    height: 100px;
+    width: 100%;
+
+    .footer-body {
+        p {
+            color: #ffffff;
+            font-size: 16px;
+            padding-top: 20px;
+        }
+    }
+}
+
+/*　スクロール　*/
+
+/*アニメーション要素のスタイル*/
+.box {
+	opacity : 0;
+	visibility: hidden;
+	transition: 2s;
+	transform: translateY(30px);
+}
+
+/*アニメーション要素までスクロールした時のスタイル*/
+.active{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
