@@ -1,0 +1,434 @@
+@media all and (max-width:1450px) {
+    /*メインビジュアル*/
+    .mv {
+        .container {
+            height: 800px;
+        }
+    }
+}
+
+@media all and (max-width:992px) {
+
+    [class*="-head"] {
+        
+        .head-ttl {
+            font-size: 36px;
+            
+        }
+    
+    }
+    
+    /*ヘッダー*/
+    
+    
+    /* ヘッダーナビ */
+    
+    
+    
+    /*メインビジュアル*/
+    .mv {
+        background: url(img/IMG_61314.3.jpg) no-repeat bottom center;
+        background-size: cover;
+
+        .container {
+            height: 720px;
+        }
+
+        &-ttl {
+            font-size: 50px;
+        }
+    }
+
+    /*アバウト*/
+    
+    #about {
+
+        .container {
+            max-width: none;
+        }
+    
+        .about-body {
+            padding: 100px 100px;
+
+            .about-list {
+                display: block;
+                
+                .about-content-1 {
+                    padding-left: 0;
+                    padding-top: 20px;
+                    width: 100%;
+        
+                }
+        
+                .about-content-2 {
+                    padding-right: 0;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid rgb(242, 244, 246);
+                    border-right: none;
+                    width: 100%;
+                    text-align: center;
+    
+                    .about-p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    /*フットボール*/
+    
+    #football {
+    
+        .football-body {
+    
+            .football-list {
+                margin: 0 -10px;
+
+                .football-player, .football-coach {
+                    padding: 0 10px;
+    
+                    h3 {
+                        font-size: 32px;
+                        padding: 2px 90px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+    
+            }
+        }
+    }
+    
+    /*sns*/
+    
+    #sns {
+    
+        .sns-body {
+            .sns-list {
+                margin: 0 -10px;
+            
+                .sns-icon {
+                    padding: 0 10px;
+                }
+    
+            }
+        }
+    }
+    
+    [class*="btn-ico"] {
+        font-size: 18px;
+        height: 90px;
+        width: 260px;
+        padding: 30px 30px 30px 120px;
+    }
+    
+    [class*="btn-ico"]::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        
+    }
+    
+    [class*="btn-ico"][class*="instagram"]::before {
+        background-image: url(img/glyph-logo_May2016.png);
+    }
+    
+    [class*="btn-ico"][class*="twitter"]::before {
+        background-image: url(img/Twitter_Social_Icon_Circle_Color.png);
+    }
+    
+    [class*="btn-ico"][class*="note"]::before {
+        background-image: url(img/logo_symbol.png);
+    }
+    
+    [class*="btn-ico"][class*="facebook"]::before {
+        background-image: url(img/f_logo_RGB-Blue_58.png);
+    }
+    
+    footer {
+    
+        .footer-body {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    
+    /*　スクロール　*/
+    
+    
+}
+
+@media all and (max-width:767px) {
+
+    .menu{
+        display: block;
+    }
+      
+    header nav{
+        position: fixed;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        height: 100%;
+        background-color: rgb(250, 250, 250);
+        padding-top: 60px;
+    }
+      
+    header nav ul li{
+        width: 100%;
+    }
+      
+    header nav ul li a{
+        color: rgb(4, 30, 66);
+        padding-left: 20px;
+    }
+      
+    header .btn-gnavi{
+        position: fixed;
+        top: 35px;
+        right: 45px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        cursor: pointer;
+        transition: all 400ms;
+        -webkit-transition:all 400ms;
+    }
+      
+    header .btn-gnavi span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: rgb(4, 30, 66);;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+      
+    header .btn-gnavi span:nth-child(1){
+        top: 0;
+    }
+      
+    header .btn-gnavi span:nth-child(2){
+        top: 10px;
+    }
+      
+    header .btn-gnavi span:nth-child(3){
+        top: 20px;
+    }
+      
+    header .btn-gnavi.hb-open{
+        transform: rotate(180deg);
+        -webkit-transform:rotate(180deg);
+    }
+      
+    header .btn-gnavi.hb-open span{
+        background: rgb(4, 30, 66);
+    }
+      
+    header .btn-gnavi.hb-open span:nth-child(1){
+        width: 24px;
+        transform: translate(-7px,17px) rotate(45deg);
+        -webkit-transform: translate(-7px,17px) rotate(45deg);
+    }
+      
+    header .btn-gnavi.hb-open span:nth-child(3){
+        width: 24px;
+        transform: translate(-7px,-17px) rotate(-45deg);
+        -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+    }
+
+    .list-menu {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 980px;
+        margin: 0 -15px;
+        
+    }
+
+    .list-menu > li {
+        padding: 15px 30px;
+        letter-spacing: 0.1rem;
+    }
+
+    .list-menu a {
+        color: rgb(4, 30, 66);
+    }
+
+    .logo {
+        height: 50px;
+        vertical-align: bottom;
+    }
+
+    [class*="-head"] {
+        
+        .head-ttl {
+            font-size: 28px;
+            
+        }
+    
+    }
+    
+    /*ヘッダー*/
+    
+    /* ヘッダーナビ */
+    
+    
+    
+    /*メインビジュアル*/
+    .mv {
+
+        .container {
+            height: 440px;
+        }
+
+        &-ttl {
+            font-size: 36px;
+        }
+    }
+
+    /*アバウト*/
+    
+    #about {
+
+        .about-body {
+            padding: 80px 20px;
+
+            .about-list {
+                display: block;
+                
+                .about-content-1 {
+                    padding-left: 0;
+                    padding-top: 20px;
+                    width: 100%;
+                }
+        
+                .about-content-2 {
+                    padding-right: 0;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid rgb(242, 244, 246);
+                    border-right: none;
+                    width: 100%;
+                    text-align: left;
+    
+                    .about-name {
+                        font-size: 28px;
+                    }
+    
+                    .about-sub {
+                        font-size: 14px;
+                        margin-top: 14px;
+                        line-height: 22px;
+                    }
+    
+                    .about-p {
+                        font-size: 10px;
+                        margin-top: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    /*フットボール*/
+    
+    #football {
+    
+        .football-body {
+    
+            .football-list {
+                margin: 0 -10px;
+                display: block;
+
+                .football-player, .football-coach {
+                    padding: 0 10px;
+                    width: 100%;
+                    margin-bottom: 50px;
+    
+                    h3 {
+                        font-size: 28px;
+                        padding: 2px 100px;
+                    }
+    
+                    p {
+                        font-size: 12px;
+                        line-height: 24px;
+                    }
+                }
+    
+            }
+        }
+    }
+    
+    /*sns*/
+    
+    #sns {
+    
+        .sns-body {
+            .sns-list {
+                display: block;
+                margin: 0 -10px;
+            
+                .sns-icon {
+                    padding: 0 10px;
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+    
+    [class*="btn-ico"] {
+        font-size: 16px;
+        height: 80px;
+        width: 260px;
+        padding: 30px 30px 30px 110px;
+    }
+    
+    [class*="btn-ico"]::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        margin: 0 0 20px;
+        position: absolute;
+        top: 50%;
+        left: 24px;
+    }
+    
+    [class*="btn-ico"][class*="instagram"]::before {
+        background-image: url(img/glyph-logo_May2016.png);
+    }
+    
+    [class*="btn-ico"][class*="twitter"]::before {
+        background-image: url(img/Twitter_Social_Icon_Circle_Color.png);
+    }
+    
+    [class*="btn-ico"][class*="note"]::before {
+        background-image: url(img/logo_symbol.png);
+    }
+    
+    [class*="btn-ico"][class*="facebook"]::before {
+        background-image: url(img/f_logo_RGB-Blue_58.png);
+    }
+    
+    footer {
+    
+        .footer-body {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    
+    /*　スクロール　*/
+    
+}
